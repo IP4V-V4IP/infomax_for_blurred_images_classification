@@ -1,1 +1,1 @@
-# infomax_for_blurred_images_classification
+# Infomax for Blurred Images Classification
