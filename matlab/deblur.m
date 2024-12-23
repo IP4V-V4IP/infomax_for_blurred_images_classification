@@ -16,5 +16,4 @@ function y_hat = deblur(y, residual, Nor, beta, H)
 
     assignin('base', 'y_hat', y_hat);
 
-
 end

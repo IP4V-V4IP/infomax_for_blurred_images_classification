@@ -3,7 +3,6 @@ function SNRe = computeSNRe(y, Nor, H)
 
     J = size(H,2); % number of subbands
     Yf = fft2(y);
-    SNRf = zeros(size(y));
     SigmaNoi = 1/(sqrt(12)*Nor);
     for j = 1:J
         var_noi(j) = mean(H(:,j))*SigmaNoi^2;

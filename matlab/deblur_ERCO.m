@@ -27,7 +27,5 @@ function y_hat = deblur_ERCO(image_filename)
 
     assignin('base', 'Cost', Cost);
     assignin('base', 'beta', beta_ext)
-    assignin('base', 'y_hat', y_hat)
-
 
 end

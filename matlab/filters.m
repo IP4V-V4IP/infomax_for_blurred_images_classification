@@ -6,9 +6,8 @@ function H = filters()
     u = u/Ny;
     v = v/Nx;
     freq = sqrt(u.^2 + v.^2);
-    ff = Ny/3*freq; % 256x256 -> 3x3 degrees, cycles per degree, not used here
 
-    % Number of spectral rings in the maximal circle, including high- and low-pass residuals
+    % Number of spectral rings in the maximal circle, including high- and blurred residuals
     Mp = J-2;
     P = 1; % Overlapping factor (P = 1 => sine and cosine, squared)
     Q = 4; % logarithmic sampling
@@ -21,4 +20,5 @@ function H = filters()
     % High-pass residual (HPR)
     m = Mp+1;
     H(:,m+1) = 1 - squeeze(sum(H,2));
+
 end
