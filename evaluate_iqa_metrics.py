@@ -147,7 +147,5 @@ def build_friqa_results():
 
 
 if __name__ == '__main__':
-    # run_nriqa()
-    # run_friqa()
-    build_nriqa_results()
-    build_friqa_results()
+    run_nriqa()
+    run_friqa()
