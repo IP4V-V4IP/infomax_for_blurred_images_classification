@@ -56,7 +56,7 @@ def deblurred_nb3(*args, **kwargs):
                         *args, **kwargs)
 
 
-@register_dataset(name='deblurred_nb_ls_adhoc2')
+@register_dataset(name='deblurred_nb_ls_adhoc')
 def deblurred_nb_ls_adhoc(*args, **kwargs):
-    return _get_dataset(name='deblurred_nb_ls_adhoc2', params=NoiseGeneralisationParams(experiments=[blur_experiment]),
+    return _get_dataset(name='deblurred_nb_ls_adhoc', params=NoiseGeneralisationParams(experiments=[blur_experiment]),
                         *args, **kwargs)
